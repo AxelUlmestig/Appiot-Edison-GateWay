@@ -108,12 +108,8 @@ public class TemperatureSensor implements Runnable {
             double temp = ByteBuffer.wrap(tempRaw).getDouble();
             logger.log(Level.INFO, "Measured " + temp + " degrees Celsius.");
 
-            if (temp > -20) { //sensor keeps detecting -80 degrees for some reason...
-                Measurement measurement = new Measurement(sensorHardwareTypeId, serialNumber, temp);
-                client.sendSensorMeasurement(measurement);
-            } else { //TODO remove this before release
-                System.out.println(temp + " is unresonable, ignoring.");
-            }
+            Measurement measurement = new Measurement(sensorHardwareTypeId, serialNumber, temp);
+            client.sendSensorMeasurement(measurement);
 
             Thread.sleep(1000);
         }
