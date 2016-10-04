@@ -1,0 +1,9 @@
+fota/
+logs/
+deviceregistry.json
+registrationticket.json
+sensation-client.properties
+SampleGateway/target/
+SampleGateway/tinyb.jar
+sensation_home
+*~
