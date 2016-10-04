@@ -153,6 +153,15 @@ $ mvn compile assembly:single
 ```
 
 # 4: Run
+### 4.1: Start Bluetooth
+
+Execute the following commands in the terminal to enable bluetooth:
+```sh
+$ rfkill unblock bluetooth
+$ hciconfig hci0 up
+```
+
+### 4.2: Start the Gateway
 There should now be a runnable jar file under
 SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
 Run it with
