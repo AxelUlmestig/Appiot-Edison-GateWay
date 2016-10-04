@@ -119,6 +119,15 @@ path.
 $ mkdir ~/sensation_home
 $ export SENSATION_HOME=~/sensation_home
 ```
+Set up sensation-client.properties file
+```sh
+$ cd $SENSATION_HOME
+$ echo "log_search_string=samplegateway" >> sensation-client.properties
+$ echo "log_level=INFO" >> sensation-client.properties
+$ echo "report_interval=1000" >> sensation-client.properties
+$ echo "sendInterval=5000" >> sensation-client.properties
+$ echo "queue_size=1000" >> sensation-client.properties
+```
 
 ### 3.2 Build Gateway
 ###### 3.2.1 Configure gateway
