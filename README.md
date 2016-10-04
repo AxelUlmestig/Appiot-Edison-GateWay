@@ -120,13 +120,15 @@ $ mkdir ~/sensation_home
 $ export SENSATION_HOME=~/sensation_home
 ```
 
+### 3.2 Build Gateway
 ```sh
-$ git clone <gateway project> //TODO insert proper link
+$ git clone https://github.com/AxelUlmestig/Appiot-Edison-Gateway.git
 ```
 
 Install dependencies and package tinyb.jar for maven
 
 ```sh
+$ cd Appiot-Edison-Gateway/SampleGateway/
 $ mvn install:install-file \
         -Dfile=/usr/lib/java/tinyb.jar \
         -DgroupId=tinyb \
