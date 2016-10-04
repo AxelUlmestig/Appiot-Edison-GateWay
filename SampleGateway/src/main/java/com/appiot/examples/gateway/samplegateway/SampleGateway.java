@@ -23,11 +23,9 @@ public class SampleGateway {
         sensationClient = new SensationClient(platform); 
         sensationClient.start();
         
-        String macAddress = "98:4F:EE:03:5C:FC";
-        String serialNumber = "98:4F:EE:03:5C:FC";
+        String macAddress = "XX:XX:XX:XX";
+        String serialNumber = macAddress;
         int sensorHardwareTypeId = 1; //1 is for temperature
-        //String serialNumber = "medical2";
-        //int sensorHardwareTypeId = 50;
 
         TemperatureSensor tempSensor = new TemperatureSensor(sensationClient, serialNumber, sensorHardwareTypeId);
         boolean connected = tempSensor.connect(macAddress);
