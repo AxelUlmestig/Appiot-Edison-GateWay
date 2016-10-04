@@ -149,7 +149,7 @@ $ mvn install:install-file \
 
 Compile a runnable jar file
 ```sh
-$ mvn compile:assembly:single
+$ mvn compile assembly:single
 ```
 
 # 4: Run
