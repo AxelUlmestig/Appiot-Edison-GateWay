@@ -52,6 +52,7 @@ $ git clone https://github.com/intel-iot-devkit/tinyb.git
 (This is because the specificationVersion information is lost in Maven, would 
 be nice to fix)
 ```sh
+$ cd tinyb/
 $ nano java/BluetoothManager.java
 ```
 Add a block comment starting on line 219 and ending on line 239 (after the 
