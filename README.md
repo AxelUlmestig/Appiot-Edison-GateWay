@@ -204,7 +204,7 @@ $ java -jar SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
 ```
 
 You should now be able to see the readings from the other Edison
-written in the terminal now.
+written in the terminal.
 
 # 6: Register device in Appiot
 ### 6.1 Create device type
