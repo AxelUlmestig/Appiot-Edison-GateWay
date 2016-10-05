@@ -136,6 +136,7 @@ $ git clone https://github.com/AxelUlmestig/Appiot-Edison-Gateway.git
 ```
 
 ```sh
+$ cd Appiot-Edison-Gateway/
 $ nano SampleGateway/src/main/java/com/appiot/examples/gateway/samplegateway/SampleGateway.java
 ```
  -  Edit lines 26 and set the variable 'macAddrees' to the mac address of your sensor.
