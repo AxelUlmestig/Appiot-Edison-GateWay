@@ -200,11 +200,7 @@ If you're getting problems with opkg you might need to specify the repos for
 opkg:
 
 ```sh
-$ nano /etc/opkg/base-feeds.conf
-```
-Add the following lines and save:
-```
-src all     http://iotdk.intel.com/repos/1.1/iotdk/all
-src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86
-src i586    http://iotdk.intel.com/repos/1.1/iotdk/i586
+$ echo "src all     http://iotdk.intel.com/repos/1.1/iotdk/all" >> /etc/opkg/base-feeds.conf
+$ echo "src x86 http://iotdk.intel.com/repos/1.1/iotdk/x86" >> /etc/opkg/base-feeds.conf
+$ echo "src i586    http://iotdk.intel.com/repos/1.1/iotdk/i586" >> /etc/opkg/base-feeds.conf
 ```
