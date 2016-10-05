@@ -91,13 +91,13 @@ public static synchronized BluetoothManager getBluetoothManager() throws Runtime
 }
 ```
 
-### 2.4 Set Java variables:
+### 2.3 Set Java variables:
 ```sh
 $ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 $ export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-### 2.3 Build:
+### 2.4 Build:
 Move to the top of the tinyb folder and execute the following shell commands:
 ```sh
 $ mkdir build
@@ -141,7 +141,7 @@ $ nano SampleGateway/src/main/java/com/appiot/examples/gateway/samplegateway/Sam
  -  Set the variable serialNumber on line 27 to a unique id. You can use the
  mac address here as well if you're lacking in imagination.
 
-Remember the serialNumer value, it will be needed in step 5.2.
+Remember the serialNumer value, it will be needed in step 6.2.
 
 ###### 3.2.2 Install dependencies and build
 Install dependencies and package tinyb.jar for maven
@@ -162,8 +162,32 @@ Compile a runnable jar file
 $ mvn compile assembly:single
 ```
 
-# 4: Run
-### 4.1: Start Bluetooth
+# 4 Register gateway in Appiot
+
+### 4.1: Create gateway type
+  - Go to the Appiot page.
+  - Press 'Settings' -> 'Hardware Types'.
+  - Press 'Create'.
+  - Name it 'Edison Gateway' and give it a unique id (a large number preferably).
+  - Press 'Save'
+
+### 4.2: Register gateway
+  - Go back to your Appiot front page.
+  - Press 'Register Gateway'.
+  - Give it a unique serial number and choose the Gateway Type that you just 
+  created.
+  - Name you gateway something creative, like 'Edison Gateway'.
+  - Press 'Register'.
+
+### 4.3: Export device
+
+  - Go to the your newly created gateway and press 'Actions' -> 'Download Tickets'.
+  (if you came from the previous section you should be on the right page).
+  - Write the content of the downloaded file to $SENSATION_HOME/deviceregistry.json
+  on the gateway Edison.
+
+# 5: Run
+### 5.1: Start Bluetooth
 
 Execute the following commands in the terminal to enable bluetooth:
 ```sh
@@ -171,7 +195,7 @@ $ rfkill unblock bluetooth
 $ hciconfig hci0 up
 ```
 
-### 4.2: Start the Gateway
+### 5.2: Start the Gateway
 There should now be a runnable jar file under
 SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
 Run it with
@@ -182,8 +206,8 @@ $ java -jar SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
 You should now be able to see the readings from the other Edison
 written in the terminal now.
 
-# 5: Set up Sensors in Appiot
-### 5.1 Create device type
+# 6: Register device in Appiot
+### 6.1 Create device type
   - Go to 'Settings' -> 'Hardware Types'
   - Then press Device Types and then Create.
   - Name the device type "Edison Temperature" and give it a unique id 
@@ -191,7 +215,7 @@ written in the terminal now.
   - Press 'Add Sensor' and a choose the type 'Temperature'.
   - Press 'Save'.
 
-### 5.2 Register Device
+### 6.2 Register Device
   - Go back to the front page and press 'Register Device'.
   - Set the Serial Number to the serial number you chose in step 3.2.1.
   - Choose your newly created Device Type "Edison Temperature".
