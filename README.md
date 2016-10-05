@@ -216,10 +216,16 @@ written in the terminal.
   - Press 'Save'.
 
 ### 6.2 Register Device
+For this step to work the gateway Edison device needs to be running (it should 
+be printing measurements in the console) and the gateway Edison must be 
+connected to the internet.
   - Go back to the front page and press 'Register Device'.
   - Set the Serial Number to the serial number you chose in step 3.2.1.
   - Choose your newly created Device Type "Edison Temperature".
   - Press 'Continue' and then 'Register'.
+
+Now you should be able to go to your newly registered device and see a nice 
+graph of temperature measurements.
 
 # APPENDIX
 If you're getting problems with opkg you might need to specify the repos for 
