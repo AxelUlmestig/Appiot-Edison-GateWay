@@ -26,7 +26,6 @@ package that is used for the BLE communcation.
 A newer version can be downloaded here:
 http://www.bluez.org/release-of-bluez-5-42/
 
-//TODO verify that this works
 ```sh
 $ wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.42.tar.xz
 $ tar xf bluez-5.42.tar.xz
