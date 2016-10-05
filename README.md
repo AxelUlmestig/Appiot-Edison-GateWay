@@ -139,8 +139,6 @@ $ git clone https://github.com/AxelUlmestig/Appiot-Edison-Gateway.git
 $ nano SampleGateway/src/main/java/com/appiot/examples/gateway/samplegateway/SampleGateway.java
 ```
 Edit lines 26 and set the variable 'macAddrees' to the mac address of your sensor.
-Set the 'sensorHardWareTypeId' variable to a random number between 10000 and 30000
-and remember this value. It will be used in step 5.1.
 
 ###### 3.2.2 Install dependencies and build
 Install dependencies and package tinyb.jar for maven
@@ -185,14 +183,15 @@ written in the terminal now.
 ### 5.1 Create device type
   - Go to 'Settings' -> 'Hardware Types'
   - Then press Device Types and then Create.
-  - Name the "Edison Temperature" and give it the id that you assigned in 
-step 3.2.1.
+  - Name the device type "Edison Temperature Gateway" and give it a unique id 
+  in the range 20000-30000.
+  - Press 'Add Sensor' and a choose the type 'Temperature'.
   - Press 'Save'.
 
 ### 5.2 Register Device
   - Go back to the front page and press 'Register Device'.
   - Set the Serial Number to your Edison's mac address (or some other unique id).
-  - Choose your newly created Device Type "Edison Temperature".
+  - Choose your newly created Device Type "Edison Temperature Gateway".
   - Press 'Continue' and then 'Register'.
 
 # APPENDIX
