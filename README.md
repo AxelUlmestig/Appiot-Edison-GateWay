@@ -194,6 +194,7 @@ $ mvn compile assembly:single
 Execute the following commands in the terminal to enable bluetooth:
 ```sh
 $ rfkill unblock bluetooth
+$ killall bluetoothd
 $ hciconfig hci0 up
 ```
 
