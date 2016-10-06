@@ -37,7 +37,7 @@ $  ./configure --prefix=/usr --mandir=/usr/share/man --sysconfdir=/etc --localst
 $ make && make install
 ```
 
-### 1.3: Java Cacerts
+### 1.4: Java Cacerts
 if the file /usr/lib/jvm/java-8-openjdk/jre/lib/security/cacerts is empty (or 
 non-existing) you can copy the cacerts from the computer you're working on.
 
