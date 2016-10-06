@@ -33,7 +33,7 @@ http://www.bluez.org/release-of-bluez-5-42/
 $ wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.42.tar.xz
 $ tar xf bluez-5.42.tar.xz
 $ cd bluez-5.42/
-$  ./configure --prefix=/usr --mandir=/usr/share/man --sysconfdir=/etc --localstatedir=/var
+$ ./configure --prefix=/usr --mandir=/usr/share/man --sysconfdir=/etc --localstatedir=/var
 $ make && make install
 ```
 
