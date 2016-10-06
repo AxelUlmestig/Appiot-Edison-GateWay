@@ -234,6 +234,36 @@ connected to the internet.
 Now you should be able to go to your newly registered device and see a nice 
 graph of temperature measurements.
 
+# 7: Code Explanation
+
+### 7.1: SampleGateway.java
+
+The main function is located in the SampleGateway.java file. This sets up
+infrastructure related to the communication. The TemperatureSensor instance is
+initiated with information on how to communicate with Appiot (the serialNumber
+and sensorHardwareTypeId) and the device (macAddress).
+
+The sensorHardwareId 1 is used here to inform Appiot That we are dealing with
+a temperature sensor.
+
+The TemperatureSensor class exposes one public method, connect. After it is 
+connected it can be run as a runnable and it will collect and pass it on to 
+Appiot.
+
+### 7.2 TemperatureSensor.java
+
+The method connect tries to connect to the mac address specified in the 
+constructor. This returns a boolean denoting if the connection was 
+successful or not.
+
+The TemperatureSensor class contains the uuids that define the service and 
+characteristic for temperature in BLE.
+
+The startReading function reads the relevant service and characteristic and 
+reads data with a frequency of 1000 ms. When the data is read and parsed it is
+then packaged in to a Measurement object and sent through the client that was
+set up in the SampleGateway.
+
 # APPENDIX
 If you're getting problems with opkg you might need to specify the repos for 
 opkg:
