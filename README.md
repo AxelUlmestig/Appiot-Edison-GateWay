@@ -10,7 +10,7 @@ Here's an example on how to set up a sensor that transmits data over BLE:
 http://appiot-docs.azurewebsites.net/?p=8021
 
 # 1: Prerequisites
-1.1: Edison setup
+### 1.1: Edison setup
 Follow the instructions on this page: (there are links to other OS'
 s if you're not on Windows)
 https://software.intel.com/en-us/get-started-edison-windows
