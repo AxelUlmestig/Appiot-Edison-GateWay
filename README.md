@@ -178,7 +178,7 @@ $ mvn compile assembly:single
   - Press 'Register Gateway'.
   - Give it a unique serial number and choose the Gateway Type that you just 
   created.
-  - Name you gateway something creative, like 'Edison Gateway'.
+  - Name you gateway something creative, like "Edison Gateway".
   - Press 'Register'.
 
 ### 4.3: Export device
@@ -225,7 +225,7 @@ connected to the internet.
   - Go back to the front page and press 'Register Device'.
   - Set the Serial Number to the serial number you chose in step 3.2.1.
   - Choose your newly created Device Type "Edison Temperature".
-  - Give your device a fitting name, e.g. 'Edison Temperature Device'.
+  - Give your device a fitting name, e.g. "Edison Temperature Device".
   - Choose the gateway that you created in step 4.2.
   - Press 'Continue' and then 'Register'.
 
