@@ -149,7 +149,7 @@ Remember the serialNumer value, it will be needed in step 6.2.
 Install dependencies and package tinyb.jar for maven
 
 ```sh
-$ cd Appiot-Edison-Gateway/SampleGateway/
+$ cd SampleGateway/
 $ mvn install:install-file \
         -Dfile=/usr/lib/java/tinyb.jar \
         -DgroupId=tinyb \
