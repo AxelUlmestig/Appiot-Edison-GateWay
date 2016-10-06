@@ -1,10 +1,13 @@
 # 0: Introduction  
-This guide will cover how to use two Intel Edisons as gateway and sensor 
-respectively. The sensor Edison will measure temperature and send it to the 
-gateway Edison which will then send it to Appiot.
+This guide will cover how to use an Intel Edisons as a gateway connecting to a
+sensor sending temperature readings. The sensor will end data to the gateway 
+Edison via BLE which will then send it to Appiot.
 
-In order to do that you need to install some software on the edison, register 
-the devices and build the code.
+In order to get the gateway up and running you need to install some software 
+on the edison, register the devices and build the code.
+
+Here's an example on how to set up a sensor that transmits data over BLE:
+http://appiot-docs.azurewebsites.net/?p=8021
 
 # 1: Prerequisites
 1.1: Edison setup
