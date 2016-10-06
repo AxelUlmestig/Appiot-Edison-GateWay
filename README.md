@@ -185,7 +185,7 @@ $ mvn compile assembly:single
 
   - Go to the your newly created gateway and press 'Actions' -> 'Download Tickets'.
   (if you came from the previous section you should be on the right page).
-  - Write the content of the downloaded file to $SENSATION_HOME/deviceregistry.json
+  - Write the content of the downloaded file to $SENSATION_HOME/registrationticket.json
   on the gateway Edison.
 
 # 5: Run
@@ -225,6 +225,8 @@ connected to the internet.
   - Go back to the front page and press 'Register Device'.
   - Set the Serial Number to the serial number you chose in step 3.2.1.
   - Choose your newly created Device Type "Edison Temperature".
+  - Give your device a fitting name, e.g. 'Edison Temperature Device'.
+  - Choose the gateway that you created in step 4.2.
   - Press 'Continue' and then 'Register'.
 
 Now you should be able to go to your newly registered device and see a nice 
