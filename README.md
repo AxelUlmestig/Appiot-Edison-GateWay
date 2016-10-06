@@ -178,7 +178,7 @@ $ mvn compile assembly:single
   - Press 'Register Gateway'.
   - Give it a unique serial number and choose the Gateway Type that you just 
   created.
-  - Name you gateway something creative, like "Edison Gateway".
+  - Name you gateway something creative, like "My Edison Gateway".
   - Press 'Register'.
 
 ### 4.3: Export device
