@@ -202,7 +202,7 @@ There should now be a runnable jar file under
 SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
 Run it with
 ```sh
-$ java -jar SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
+$ java -jar SampleGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
 ```
 
 You should now be able to see the readings from the other Edison
