@@ -139,10 +139,10 @@ $ git clone https://github.com/AxelUlmestig/Appiot-Edison-Gateway.git
 
 ```sh
 $ cd Appiot-Edison-Gateway/
-$ nano SampleGateway/src/main/java/com/appiot/examples/gateway/samplegateway/SampleGateway.java
+$ nano src/main/java/com/appiot/examples/gateway/samplegateway/EdisonGateway.java
 ```
- -  Edit lines 26 and set the variable 'macAddrees' to the mac address of your sensor.
- -  Set the variable serialNumber on line 27 to a unique id. You can use the
+ -  Edit lines 29 and set the variable 'macAddrees' to the mac address of your sensor.
+ -  Set the variable 'serialNumber' on line 30 to a unique id. You can use the
  mac address here as well if you're lacking in imagination.
 
 Remember the serialNumer value, it will be needed in step 6.2.
