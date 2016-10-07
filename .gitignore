@@ -8,3 +8,4 @@ SampleGateway/tinyb.jar
 sensation_home
 *~
 *.swp
+/target/
