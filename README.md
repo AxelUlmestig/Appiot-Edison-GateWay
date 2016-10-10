@@ -113,7 +113,7 @@ $ sudo make install
 There should now be a file called tinyb.jar under
 /usr/lib/java/
 
-# 3: Build the SampleGateway
+# 3: Build the Gateway
 ### 3.1 Set up $SENSATION_HOME
 Create sensation home folder and assign the variable $SENSATION_HOME to it's 
 path.
@@ -151,7 +151,6 @@ Remember the serialNumer value, it will be needed in step 6.2.
 Install dependencies and package tinyb.jar for maven
 
 ```sh
-$ cd SampleGateway/
 $ mvn install:install-file \
         -Dfile=/usr/lib/java/tinyb.jar \
         -DgroupId=tinyb \
@@ -202,7 +201,7 @@ $ hciconfig hci0 up
 
 ### 5.2: Start the Gateway
 There should now be a runnable jar file under
-SampeGateway/target/SampleGateway-0.0.1-jar-with-dependencies.jar
+SampeGateway/target/EdisonGateway-0.0.1-jar-with-dependencies.jar
 Run it with
 ```sh
 $ java -jar Appiot-Edison-Gateway/target/EdisonGateway-0.0.1-jar-with-dependencies.jar
