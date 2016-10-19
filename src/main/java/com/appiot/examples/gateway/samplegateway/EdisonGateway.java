@@ -27,7 +27,7 @@ public class EdisonGateway {
         sensationClient.start();
 
         final String macAddress = "";
-        final String serialNumber = "";
+        final String deviceId = "";
 
         final int sensorHardwareTypeId = 1; // 1 is for temperature
         final String serviceId = "0000181a-0000-1000-8000-00805f9b34fb";
@@ -50,7 +50,7 @@ public class EdisonGateway {
                             double temperature;
                             temperature = bleClient.readDouble();
                             logger.log(Level.INFO, "Measured " + temperature + " degrees Celsius.");
-                            Measurement measurement = new Measurement(sensorHardwareTypeId, serialNumber, temperature);
+                            Measurement measurement = new Measurement(sensorHardwareTypeId, deviceId, temperature);
                             sensationClient.sendSensorMeasurement(measurement);
 			    Thread.sleep(1000);
                         } catch (GatewayException e) {

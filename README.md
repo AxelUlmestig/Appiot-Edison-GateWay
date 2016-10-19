@@ -142,10 +142,10 @@ $ cd Appiot-Edison-Gateway/
 $ nano src/main/java/com/appiot/examples/gateway/samplegateway/EdisonGateway.java
 ```
  -  Edit lines 29 and set the variable 'macAddrees' to the mac address of your sensor.
- -  Set the variable 'serialNumber' on line 30 to a unique id. You can use the
+ -  Set the variable 'deviceId' on line 30 to a unique id. You can use the
  mac address here as well if you're lacking in imagination.
 
-Remember the serialNumer value, it will be needed in step 6.2.
+Remember the deviceId value, it will be needed in step 6.2.
 
 ###### 3.2.2 Install dependencies and build
 Install dependencies and package tinyb.jar for maven
@@ -224,7 +224,7 @@ For this step to work the gateway Edison device needs to be running (it should
 be printing measurements in the console) and the gateway Edison must be 
 connected to the internet.
   - Go back to the front page and press 'Register Device'.
-  - Set the Serial Number to the serial number you chose in step 3.2.1.
+  - Set the Serial Number to the deviceId you chose in step 3.2.1.
   - Choose your newly created Device Type "Edison Temperature".
   - Give your device a fitting name, e.g. "Edison Temperature Device".
   - Choose the gateway that you created in step 4.2.
