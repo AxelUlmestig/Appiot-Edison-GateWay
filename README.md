@@ -234,6 +234,24 @@ Now you should be able to go to your newly registered device and see a nice
 graph of temperature measurements.
 
 # APPENDIX
+### Mock data, no BLE
+If you're not interested in BLE you can use the EdisonGatewayMock class instead of the
+EdisonGateway. The mock gateway will send the hard coded temperature value 1337 to 
+Appiot once when run.
+
+In order to use this, edit the file EdisonGatewayMock.java and add the deviceId of a
+device that you're intending to use. 
+
+Then open the pom.xml file and edit the mainClass tag.
+It should now end with EdisonGatewayMock instead of EdisonGateway.
+
+After that, rebuild that application 
+```sh
+$ mvn compile assembly:single
+```
+and then you can run it as usual.
+
+### opkg
 If you're getting problems with opkg you might need to specify the repos for 
 opkg:
 
