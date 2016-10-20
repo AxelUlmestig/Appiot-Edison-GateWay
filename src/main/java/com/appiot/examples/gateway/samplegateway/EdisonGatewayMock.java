@@ -21,7 +21,7 @@ public class EdisonGatewayMock {
 
     /*
      * This will send the temperature measurement value 1337 to
-     * Appiot once.
+     * Appiot
      */
     private void start() {
         logger.log(Level.INFO, "Sample Gateway starting up.");
@@ -33,11 +33,13 @@ public class EdisonGatewayMock {
         final int sensorHardwareTypeId = 1; // 1 is for temperature
 
         try {
-            double temperature = 1337;
-            logger.log(Level.INFO, "Measured " + temperature + " degrees Celsius.");
-            Measurement measurement = new Measurement(sensorHardwareTypeId, deviceId, temperature);
-            sensationClient.sendSensorMeasurement(measurement);
-            Thread.sleep(1000);
+            while(true) {
+                double temperature = 1337;
+                logger.log(Level.INFO, "Measured " + temperature + " degrees Celsius.");
+                Measurement measurement = new Measurement(sensorHardwareTypeId, deviceId, temperature);
+                sensationClient.sendSensorMeasurement(measurement);
+                Thread.sleep(1000);
+	    }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
